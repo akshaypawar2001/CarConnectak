@@ -1,20 +1,19 @@
 package com.model;
 
-import java.util.Date;
 
 public class Reservation {
 	private int customer_id; 
 	private int vehicle_id;
 	private int reservation_id;
-	private Date reservation_start_date;
-	private Date reservation_end_date;
+	private String reservation_start_date;
+	private String reservation_end_date;
 	private double reservation_total_cost;
 	private String reservation_status;
 	private int admin_id;
 	
 	//Constructor
-	public Reservation(int customer_id, int vehicle_id, int reservation_id, Date reservation_start_date,
-			Date reservation_end_date, double reservation_total_cost, String reservation_status, int admin_id) {
+	public Reservation(int customer_id, int vehicle_id, int reservation_id, String reservation_start_date,
+			String reservation_end_date, double reservation_total_cost, String reservation_status, int admin_id) {
 		super();
 		this.customer_id = customer_id;
 		this.vehicle_id = vehicle_id;
@@ -53,16 +52,16 @@ public class Reservation {
 	public void setReservation_id(int reservation_id) {
 		this.reservation_id = reservation_id;
 	}
-	public Date getReservation_start_date() {
+	public String getReservation_start_date() {
 		return reservation_start_date;
 	}
-	public void setReservation_start_date(Date reservation_start_date) {
+	public void setReservation_start_date(String reservation_start_date) {
 		this.reservation_start_date = reservation_start_date;
 	}
-	public Date getReservation_end_date() {
+	public String getReservation_end_date() {
 		return reservation_end_date;
 	}
-	public void setReservation_end_date(Date reservation_end_date) {
+	public void setReservation_end_date(String reservation_end_date) {
 		this.reservation_end_date = reservation_end_date;
 	}
 	public double getReservation_total_cost() {
@@ -92,7 +91,5 @@ public class Reservation {
 				+ reservation_end_date + ", reservation_total_cost=" + reservation_total_cost + ", reservation_status="
 				+ reservation_status + ", admin_id=" + admin_id + "]";
 	}
-	
-	
 	
 }

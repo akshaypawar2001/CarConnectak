@@ -1,6 +1,5 @@
 package com.model;
 
-import java.util.Date;
 
 public class Vendor {
 	private int vendor_id;
@@ -8,13 +7,13 @@ public class Vendor {
 	private String vendor_last_name;
 	private String vendor_email;
 	private String vendor_phone_number;
-	private Date vendor_registration_date;
+	private String vendor_registration_date;
 	private int user_id;
 	private int address_id;
 	
 	//Constructor
 	public Vendor(int vendor_id, String vendor_first_name, String vendor_last_name, String vendor_email,
-			String vendor_phone_number, Date vendor_registration_date, int user_id, int address_id) {
+			String vendor_phone_number, String vendor_registration_date, int user_id, int address_id) {
 		super();
 		this.vendor_id = vendor_id;
 		this.vendor_first_name = vendor_first_name;
@@ -72,11 +71,11 @@ public class Vendor {
 		this.vendor_phone_number = vendor_phone_number;
 	}
 
-	public Date getVendor_registration_date() {
+	public String getVendor_registration_date() {
 		return vendor_registration_date;
 	}
 
-	public void setVendor_registration_date(Date vendor_registration_date) {
+	public void setVendor_registration_date(String vendor_registration_date) {
 		this.vendor_registration_date = vendor_registration_date;
 	}
 
